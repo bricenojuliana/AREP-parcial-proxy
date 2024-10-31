@@ -6,7 +6,7 @@ Cliente web: En el servidor proxy esta disponible la cliente web con HTML y JS. 
 
 
 
-Uploading Screen Recording 2024-10-31 155555.mp4…
+
 ![image](https://github.com/user-attachments/assets/f5329035-27e5-4639-9cd9-71da4fecb861)
 
 
