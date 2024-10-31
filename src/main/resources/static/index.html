@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Math Services</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<h1>Linear Search</h1>
+<form action="/linearsearch">
+    <label for="listlinear">List:</label><br>
+    <input type="text" id="listlinear" name="list" value="10,20,13,40,60"><br><br>
+    <label for="valuelinear">Value:</label><br>
+    <input type="text" id="valuelinear" name="value" value="13"><br><br>
+    <input type="button" value="Submit" onclick="loadGetLinear()">
+</form>
+<div id="getlinearsearch"></div>
+
+<script>
+    function loadGetLinear() {
+        let list = document.getElementById("listlinear").value;
+        let value = document.getElementById("valuelinear").value;
+        const xhttp = new XMLHttpRequest();
+        xhttp.onload = function() {
+            document.getElementById("getlinearsearch").innerHTML =
+            this.responseText;
+        }
+        xhttp.open("GET", "/linearsearch?list="+list+"&value="+value);
+        xhttp.send();
+    }
+</script>
+
+<h1>Binary Search</h1>
+<form action="/binarysearch">
+    <label for="listbinary">List:</label><br>
+    <input type="text" id="listbinary" name="list" value="10,60,40,82,26"><br><br>
+    <label for="valuebinary">Value:</label><br>
+    <input type="text" id="valuebinary" name="value" value="60"><br><br>
+    <input type="button" value="Submit" onclick="loadGetBinary()">
+</form>
+
+<div id="getbinarysearch"></div>
+
+<script>
+    function loadGetBinary() {
+        let list = document.getElementById("listbinary").value;
+        let value = document.getElementById("valuebinary").value;
+        const xhttp = new XMLHttpRequest();
+        xhttp.onload = function() {
+            document.getElementById("getbinarysearch").innerHTML =
+            this.responseText;
+        }
+        xhttp.open("GET", "/binarysearch?list="+list+"&value="+value);
+        xhttp.send();
+    }
+</script>
+</body>
+</html>
