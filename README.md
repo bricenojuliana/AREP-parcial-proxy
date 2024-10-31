@@ -4,7 +4,7 @@ Despliegue corriendo y funcionando de una instancia de math services: Se despleg
 Servidor proxy funcionando: El servidor redirije las peticiones correctamente y esta implementado el algoritmo de round-robin, sin embargo solo esta reidijiendo a la unica instancia desplegada.}
 Cliente web: En el servidor proxy esta disponible la cliente web con HTML y JS. Dado que el servidor aun no esta desplegado se accde a el a traves de http://localhost:8080/index.html
 
-
+Video de uso en Screen Recording 2024-10-31 155555.mp4
 
 
 ![image](https://github.com/user-attachments/assets/f5329035-27e5-4639-9cd9-71da4fecb861)
